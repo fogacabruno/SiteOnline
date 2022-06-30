@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration:none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    background-image: url("https://www.elagoradiario.com/wp-content/uploads/2021/05/Lagos-m%C3%A1s-grandes-del-mundo-1140x600.jpg");
+    background-size: cover;
+    /*COBRIR  TODA A TELA*/
+    background-repeat: no-repeat;
+    /*PARA NÃO REPETIR A FOTO*/
+    background-position: center;
+    /*POSIÇÃO DA FOTO*/
+   
+}
+.logo{
+    font-size: 1rem;
+    display: block;
+    padding-right: 20px;
+    color: #000;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 80px 0 80px;
+}
+
+header div {
+    margin: auto;
+    margin-left: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    padding: 20px 20px;
+    list-style: none;
+    font-size: 20px; 
+}
+
+a{
+    color: #000;
+    font-weight: bold;
+}
+
+
+    #conteiner {
+    display: grid;
+    grid-template-columns: repeat(15);
+    grid-template-rows: repeat(15, 0.1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: transparent;
+    /*COR DO FUNDO*/
+    backdrop-filter: blur(2px);
+    /*EFEITO BORRADO*/
+    -webkit-backdrop-filter: blur(2px);
+    }
+    /* LINHA COMEÇA / COLUNAS COMEÇA / LINHA TERMINA / COLUNA TERMINA*/
+    .foto { grid-area: 1 / 1 / 2 / 2; ;}
+
+    .foto img{
+        padding: 0.7vw 0 0 2vw;
+        width: 80%;
+        opacity: 0.8;
+    }
+    .header { grid-area: 1 / 2 / 2 /16;}
+    
+    .div3 { 
+        grid-area: 3 / 1 / 4 / 10; 
+        padding: 15px 2%;
+        text-align: center;
+    }
+    
+    h1{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    p{
+        padding-top: 5px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: justify;
+    }
+    #inicio {   
+        padding: 0 30px 0 30px;
+        align-items: center;
+    }
+    
+    #inicio div {
+        width: 700px;
+
+    }
+    
+    #inicio div p {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    
+    #inicio div button {
+        width: 150px;
+        height: 50px;
+        border-radius: 90px;
+        border: none;
+        margin: 20px 0;
+        font-size: 20px;
+        font-weight: 600;
+        background: #C14649;
+        color: #fff
+    }
+    
+    #inicio div button:hover {
+        background: rgb(219, 90, 92);
+    }
+
+    #Cadastro {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        /*height: 500px;por centagem*/
+        /* background-image: linear-gradient(-90deg, #27274D, #643488); 
+        background-image: linear-gradient(-90deg, #4d2727, #643488);*/
+        padding: 0 30px;
+    }
+    
+    #Cadastro div {
+        text-align: center;
+    }
+    
+    #Cadastro div h1 {
+        margin-bottom: 10px;
+    }
+    
+    /* borda externa */
+    #Cadastro form {
+      
+        width: 210px;
+        color: #2A2850;
+        background: #fff;
+        padding:20px 40px; 
+        border-radius: 15px;
+        font-size: 18px;
+    }
+    
+    #Cadastro form input {
+        width: 200px; 
+        margin: 10px 0;
+        padding: 9px;
+        background: #fff;
+        border: solid 1px #2A2850;
+        font-size: 14px;
+    }
+    
+    #Cadastro form button {
+        background: #2A2850;
+        width: 210px;
+        height: 55px;
+        border: none;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 20px;
+        border-radius: 50px;
+    }
+    
+    #Cadastro form button:hover {
+        background: rgb(62, 59, 114); 
+    }
+    
+    /* .div4 { grid-area: 2 / 4 / 4 / 6; background-color: #391d1d;}*/
+    .div5 { grid-area: 8 / 1 / 16 / 15;}
+    .div6 { grid-area: 6 / 1 / 7 / 10; } 
+    .div7 { grid-area: 16 / 1 / 16 / 16;}
+
+
+    @media (max-width: 1000px) {
+        body {
+            background-image: url("https://st.depositphotos.com/3008028/3749/i/450/depositphotos_37492495-stock-photo-abstract-blue-background.jpg") 
+        }
+    }

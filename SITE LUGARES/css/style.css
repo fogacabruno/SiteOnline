@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url("https://www.infoescola.com/wp-content/uploads/2019/05/mar-da-noruega-269018042.jpg");
+    background-size: cover;
+    /*COBRIR  TODA A TELA*/
+    background-repeat: no-repeat;
+    /*PARA NÃO REPETIR A FOTO*/
+    background-position: center;
+    /*POSIÇÃO DA FOTO*/
+    width: 100%;
+    /*LARGURA*/
+    min-height: 100vh;
+    /*ALTURA MINIMA*/
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+#conteiner {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+    /* LINHA COMEÇA / COLUNAS COMEÇA / LINHA TERMINA / COLUNA TERMINA*/
+.header {
+    grid-area: 1 / 1 / 2 / 11; 
+    background-size: cover;
+    /*COBRIR  TODA A TELA*/
+    
+}
+
+header {
+    height: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 80px 0 80px;
+    /*background-image: linear-gradient(-90deg, #27274D, #643488);
+    background-image: linear-gradient(-90deg, #4d2727, #643488)*/;
+}
+
+header div {
+    margin: auto;
+    margin-left: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    padding: 20px 20px;
+    list-style: none;
+    font-size: 20px; 
+}
+
+a{
+    text-decoration:none;
+    color: white;
+}
+
+.posi{
+    background-color: rgba(27, 27, 27, 0.9);
+    text-align: center;
+    border-radius: 11px 11px 0 0;
+}
+
+.lug1 { grid-area: 3 / 3 / 7 / 5; 
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT8cI1icSuE2Atv_gJvUrBeAJmac0h1_tQvykDR5q_tkL5rgUDq3M2nt40pawJAO92_fxh-pgf9PPSv2-xZZ-5Kw");
+    border-radius: 4.8%;
+    background-repeat: no-repeat;
+    /*PARA NÃO REPETIR A FOTO*/
+    background-position: center;
+    /*POSIÇÃO DA FOTO*/
+    background-size: 100%; 
+}
+
+.lug2 { grid-area: 3 / 5 / 7 / 7; 
+     background-image: url("https://pt.bcdn.biz/Images/2016/8/26/e47f552f-a66c-47a4-ba0e-68aa2f703101.jpg");
+     border-radius: 4.8%;
+     background-repeat: no-repeat;
+     /*PARA NÃO REPETIR A FOTO*/
+     background-position: center;
+     /*POSIÇÃO DA FOTO*/ 
+     background-size: 100%;
+}
+ /* LINHA COMEÇA / COLUNAS COMEÇA / LINHA TERMINA / COLUNA TERMINA*/
+.lug3 { grid-area: 3 / 7 / 7 / 9; 
+    border-radius: 4.8%;
+    background-image: url("https://pt.bcdn.biz/Images/2016/8/26/1c8975d2-3557-4816-bae4-099ea87d0a2e.jpg");
+
+    background-repeat: no-repeat;
+     /*PARA NÃO REPETIR A FOTO*/
+     background-position: center;
+     /*POSIÇÃO DA FOTO*/ 
+     background-size: 100%;   
+       
+}
+
+.lug4 { grid-area: 7 / 3 / 11 / 5; 
+    background-image: url("https://viagemeturismo.abril.com.br/wp-content/uploads/2019/01/gettyimages-717166755.jpg?quality=70&strip=info&w=1024&resize=1200,800");
+    border-radius: 4.8%;
+  
+    background-repeat: no-repeat;
+    /*PARA NÃO REPETIR A FOTO*/
+    background-position: center;
+    /*POSIÇÃO DA FOTO*/ 
+    background-size: 100%; 
+}
+
+
+.lug5 { grid-area: 7 / 5 / 11 / 7; 
+    /* background-color: rgb(75, 0, 52); */
+    background-image: url("https://viagemeturismo.abril.com.br/wp-content/uploads/2020/01/gettyimages-1045563036.jpg?quality=70&strip=info&w=300&h=200&crop=1");
+    border-radius: 4.8%;
+    
+    background-repeat: no-repeat;
+     /*PARA NÃO REPETIR A FOTO*/
+     background-position: center;
+     /*POSIÇÃO DA FOTO*/ 
+     background-size: 100%; 
+}
+
+.lug6 { grid-area: 7 / 7 / 11 / 9; 
+    background-image: url("https://s2.glbimg.com/Po1nu1ExVNpInJWnIRPUM-K4YHU=/0x0:1700x1065/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2018/5/I/mpOT5qSe2Ln6fHKlKaWw/denali-national-park-1733313-1920.jpg");
+    border-radius: 4.8%;
+  
+    background-repeat: no-repeat;
+    /*PARA NÃO REPETIR A FOTO*/
+    background-position: center;
+    /*POSIÇÃO DA FOTO*/ 
+    background-size: 100%; 
+}
+
+.lug7 { grid-area: 11 / 3 / 15 / 5; 
+    background-image: url("https://cdn.travelsafe-abroad.com/wp-content/uploads/71a41913c9b21af17cb47a030bf6f0d0.jpg");
+    border-radius: 4.8%;
+ 
+    background-repeat: no-repeat;
+    /*PARA NÃO REPETIR A FOTO*/
+    background-position: center;
+    /*POSIÇÃO DA FOTO*/ 
+    background-size: 100%; 
+}
+
+.lug8 { grid-area: 11 / 5 / 15 / 7; 
+    background-image: url("https://viagemeturismo.abril.com.br/wp-content/uploads/2021/09/IMG_4666.jpg?quality=70&strip=info&resize=680,453");
+    border-radius: 4.8%;
+   
+    background-repeat: no-repeat;
+    /*PARA NÃO REPETIR A FOTO*/
+    background-position: center;
+    /*POSIÇÃO DA FOTO*/ 
+    background-size: 100%; 
+}
+
+.lug9 { grid-area: 11 / 7 / 15 / 9; 
+    background-image: url("https://viagemeturismo.abril.com.br/wp-content/uploads/2016/12/foto-abre-pgalinhas011.jpg?quality=70&strip=info&w=836&w=636");
+    border-radius: 4.8%;
+  
+    background-repeat: no-repeat;
+    /*PARA NÃO REPETIR A FOTO*/
+    background-position: center;
+    /*POSIÇÃO DA FOTO*/ 
+    background-size: 100%; 
+}
+
+@media (max-width: 1000px) {
+    body {
+        background-image: url("https://st.depositphotos.com/3008028/3749/i/450/depositphotos_37492495-stock-photo-abstract-blue-background.jpg") 
+    }
+
+    a{
+        color: #000;
+        font-weight: bold;
+    }
+    
+    header {
+        padding: 10px 30px 0 30px;
+    }
+    
+    nav ul li {
+        width: 130px;
+        padding: 0 10px;
+        list-style: none;
+        font-size: 18px; 
+    }
+
+    .logo{
+        font-size: 1rem;
+        padding-left: 5px;
+        display: block;
+        padding-right: 15px;
+        color: #000;
+    }
+    
+    nav ul {
+        display: block;
+    }
+    #conteiner {
+        width: 100vw;
+        height: 1500px;
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(19, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+   
+    /* LINHA COMEÇA / COLUNAS COMEÇA / LINHA TERMINA / COLUNA TERMINA*/
+    .header {grid-area: 1 / 1 / 2 / 11;}     
+    .lug1 { grid-area: 2 / 2 / 4 / 9; margin:0;}
+    .lug2 { grid-area: 4 / 2 / 6 / 9; margin:0;}
+    .lug3 { grid-area: 6 / 2 / 8 / 9; margin:0;}  
+    .lug4 { grid-area: 8 / 2 / 10 / 9; margin:0;}
+    .lug5 { grid-area: 10 / 2 / 12 / 9; margin:0;}
+    .lug6 { grid-area: 12 / 2 / 14 / 9; margin:0;}
+    .lug7 { grid-area: 14 / 2 / 16 / 9; margin:0;}
+    .lug8 { grid-area: 16 / 2 / 18 / 9; margin:0;}  
+    .lug9 { grid-area: 18 / 2 / 20 / 9; margin:0 0 10px 0;}
+}
